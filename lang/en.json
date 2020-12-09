@@ -1,0 +1,65 @@
+{
+  "norse": {
+    "injuries": {
+      "name": "Name",
+      "onsetAt": "Onset At",
+      "maxAt": "Max At",
+      "maxSeverity": "Max Severity",
+      "value": "Current Value",
+      "max": "Max Value (Always 1.0)",
+      "lossOfLucidity": "Loss of Lucidity",
+      "pain": "Pain",
+      "nausea": "Nausea",
+      "systemicOrganFailure": "Systemic Organ Failure",
+      "breathingDifficulty": "Breathing Difficulty"
+    },
+    "organs": {
+      "name": "Name",
+      "material": "Material",
+      "bloodPercentage": "Blood Percentage",
+      "tempDamageAmount": "Current Temporary Damage Level",
+      "permanentDamageAmount": "Current Permanent Damage Level"
+    },
+    "actorSheet": {
+      "newItem": "New Item",
+      "favor": "Favor",
+      "healthAttributes": "Health Attributes",
+      "body": "Body",
+      "basics": "Basics"
+    },
+    "actorBasics": {
+      "age": "Age",
+      "height": "Height (meters)",
+      "weight": "Weight (kg)"
+    },
+    "deities": {
+      "thor": "Thor",
+      "odin": "Odin",
+      "loki": "Loki"
+    },
+    "healthAttributes": {
+      "oxygenLevel": "Oxygen Level",
+      "bloodLevel": "Blood Level (mL)",
+      "heartBeatVolume": "Blood Volume Pumped per Heart Beat",
+      "restingBPM": "Resting Heart Rate",
+      "currentBPM": "Current Heart Rate"
+    },
+    "skills": {
+      "tactics": "Tactics",
+      "lore": "Lore",
+      "perception": "Perception",
+      "investigation": "Investigation",
+      "deduction": "Deduction",
+      "power": "Power",
+      "athletics": "Athletics",
+      "healing": "Healing",
+      "intimidation": "Intimidation",
+      "performance": "Performance",
+      "accuracy": "Accuracy",
+      "speed": "Speed",
+      "persuasion": "Persuasion",
+      "deception": "Deception",
+      "stealth": "Stealth"
+    }
+  }
+}

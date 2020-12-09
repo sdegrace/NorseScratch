@@ -1,0 +1,161 @@
+{
+  "brain": {
+    "material": "fleshy",
+    "blood_percentage": 0.15,
+    "temp_damage_amount": 0,
+    "permanent_damage_amount": 0,
+    "injury_symptoms": {
+      "loss_of_lucidity": {
+        "onset_at": 0.1,
+        "max_at": 0.5,
+        "max_severity": 1.0
+      },
+      "nausea": {
+        "onset_at": 0.05,
+        "max_at": 0.4,
+        "max_severity": 0.4
+      },
+      "pain": {
+        "onset_at": 0.05,
+        "max_at": 0.4,
+        "max_severity": 0.25
+      }
+    }
+  },
+  "liver": {
+    "material": "fleshy",
+    "blood_percentage": 0.27,
+    "temp_damage_amount": 0,
+    "permanent_damage_amount": 0,
+    "injury_symptoms": {
+      "nausea": {
+        "onset_at": 0.1,
+        "max_at": 0.75,
+        "max_severity": 0.9
+      },
+      "pain": {
+        "onset_at": 0.25,
+        "max_at": 0.75,
+        "max_severity": 0.9
+      },
+      "systemic_organ_failure": {
+        "onset_at": 0.4,
+        "max_at": 1.0,
+        "max_severity": 0.000002
+      }
+    }
+  },
+  "heart": {
+    "material": "fleshy",
+    "blood_percentage": 1.0,
+    "temp_damage_amount": 0,
+    "permanent_damage_amount": 0,
+    "injury_symptoms": {
+      "pain": {
+        "onset_at": 0.25,
+        "max_at": 1.0,
+        "max_severity": 0.75
+      },
+      "systemic_organ_failure": {
+        "onset_at": 0.25,
+        "max_at": 1.0,
+        "max_severity": 0.00167
+      }
+    }
+  },
+  "lungs": {
+    "material": "fleshy",
+    "blood_percentage": 1.0,
+    "temp_damage_amount": 0.0,
+    "permanent_damage_amount": 0.0,
+    "injury_symptoms": {
+      "breathing_difficulty": {
+        "onset_at": 0.05,
+        "max_at": 1.0,
+        "max_severity": 1.0
+      },
+      "pain": {
+        "onset_at": 0.05,
+        "max_at": 1.0,
+        "max_severity": 0.9
+      }
+    }
+  },
+  "stomach": {
+    "material": "fleshy",
+    "blood_percentage": 0.08,
+    "temp_damage_amount": 0.0,
+    "permanent_damage_amount": 0.0,
+    "injury_symptoms": {
+      "nausea": {
+        "onset_at": 0.05,
+        "max_at": 0.8,
+        "max_severity": 1.0
+      },
+      "systemic_organ_failure": {
+        "onset_at": 0.9,
+        "max_at": 0.95,
+        "max_severity": 0.00003
+      },
+      "pain": {
+        "onset_at": 0.1,
+        "max_at": 0.5,
+        "max_severity": 0.8
+      }
+    }
+  },
+  "intestine": {
+    "material": "fleshy",
+    "blood_percentage": 0.08,
+    "temp_damage_amount": 0.0,
+    "permanent_damage_amount": 0.0,
+    "injury_symptoms": {
+      "nausea": {
+        "onset_at": 0.05,
+        "max_at": 0.8,
+        "max_severity": 0.9
+      },
+      "systemic_organ_failure": {
+        "onset_at": 0.9,
+        "max_at": 0.95,
+        "max_severity": 0.00003
+      },
+      "pain": {
+        "onset_at": 0.1,
+        "max_at": 0.5,
+        "max_severity": 0.8
+      }
+    }
+  },
+  "kidney": {
+    "material": "fleshy",
+    "blood_percentage": 0.22,
+    "temp_damage_amount": 0.0,
+    "permanent_damage_amount": 0.0,
+    "injury_symptoms": {
+      "systemic_organ_failure": {
+        "onset_at": 0.25,
+        "max_at": 1.0,
+        "max_severity": 0.0000023
+      },
+      "pain": {
+        "onset_at": 0.1,
+        "max_at": 0.6,
+        "max_severity": 0.8
+      }
+    }
+  },
+  "larynx": {
+    "material": "fleshy",
+    "blood_percentage": 0.01,
+    "temp_damage_amount": 0.0,
+    "permanent_damage_amount": 0.0,
+    "injury_symptoms": {
+      "breathing_difficulty": {
+        "onset_at": 0.05,
+        "max_at": 1.0,
+        "max_severity": 1.0
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+%MHR = 0.6463 x %VO2max + 37.182
+%VO2max = 57.402 - 0.372 * age + 8.596 * gender + 1.396 * PASS - 0.683 * BMI
+MHR = 220 - Age
+BMI = Weight / height^2
