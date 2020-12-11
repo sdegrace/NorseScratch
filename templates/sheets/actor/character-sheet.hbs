@@ -4,27 +4,26 @@
         <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
     </header>
 
-    <section class="items">
-        <h3>Owned Items</h3>
-        {{log data}}
-        {{log actor}}
-        <h2>{{data.test}}</h2>
-<!--        <ol class="actor-items">-->
-<!--            {{#each actor.items as |item id|}}-->
-<!--                {{item}} {{id}}-->
-<!--&lt;!&ndash;                    <li class="actor-item" data-item-id="{{id}}">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <div class="item-name">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <h4>{{item.name}}</h4>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <div class="item-controls">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </li>&ndash;&gt;-->
-<!--            {{/each}}-->
-<!--        </ol>-->
+    <section class="basics">
+        <div>
+            <h2>{{localize 'norse.actorSheet.basics'}}</h2>
+            <table>
+                <tr>
+                    <th>{{localize 'norse.actorBasics.age'}}</th>
+                    <td>{{data.characterAttributes.age}}</td>
+                </tr>
+                <tr>
+                    <th>{{localize 'norse.actorBasics.height'}}</th>
+                    <td>{{data.characterAttributes.height}}</td>
+                </tr>
+                <tr>
+                    <th>{{localize 'norse.actorBasics.weight'}}</th>
+                    <td>{{data.characterAttributes.weight}}</td>
+                </tr>
+            </table>
+        </div>
     </section>
+    <section class="deities">
     <div>
         <table>
             <tr>
@@ -33,17 +32,17 @@
                 <th colspan="2">{{localize 'norse.deities.loki'}}</th>
             </tr>
             <tr>
-                <th>{{localize 'norse.actorSheet.favor'}}</th>
+                <td>{{localize 'norse.actorSheet.favor'}} of {{localize 'norse.deities.odin'}}</td>
                 <td>
                     <input class="deity-favor inline-edit" name="odin-favor" type="text"
                            value="{{data.favor.odin.value}}" data-value="data.favor.odin.value" data-dtype="Number">
                 </td>
-                <th>{{localize 'norse.actorSheet.favor'}}</th>
+                <td>{{localize 'norse.actorSheet.favor'}} of {{localize 'norse.deities.thor'}}</td>
                 <td>
                     <input class="deity-favor inline-edit" name="thor-favor" type="text"
                            value="{{data.favor.thor.value}}" data-value="data.favor.thor.value" data-dtype="Number">
                 </td>
-                <th>{{localize 'norse.actorSheet.favor'}}</th>
+                <td>{{localize 'norse.actorSheet.favor'}} of {{localize 'norse.deities.loki'}}</td>
                 <td>
                     <input class="deity-favor inline-edit" name="loki-favor" type="text"
                            value="{{data.favor.loki.value}}" data-value="data.favor.loki.value" data-dtype="Number">
@@ -51,87 +50,87 @@
             </tr>
 
             <tr>
-                <th>{{localize 'norse.skills.tactics'}}</th>
+                <td>{{localize 'norse.skills.tactics'}}</td>
                 <td>
                     <input class="skill-value inline-edit" data-value="data.skills.tactics.value" name="tactics"
                            type="text" value="{{data.skills.tactics.value}}" data-dtype="Number">
                 </td>
-                <th>{{localize 'norse.skills.power'}}</th>
+                <td>{{localize 'norse.skills.power'}}</td>
                 <td>
                     <input class="skill-value inline-edit" data-value="data.skills.power.value" name="power" type="text"
                            value="{{data.skills.power.value}}" data-dtype="Number">
                 </td>
-                <th>{{localize 'norse.skills.accuracy'}}</th>
+                <td>{{localize 'norse.skills.accuracy'}}</td>
                 <td>
                     <input class="skill-value inline-edit" data-value="data.skills.accuracy.value" name="accuracy"
                            type="text" value="{{data.skills.accuracy.value}}" data-dtype="Number">
                 </td>
             </tr>
             <tr>
-                <th>{{localize 'norse.skills.lore'}}</th>
+                <td>{{localize 'norse.skills.lore'}}</td>
                 <td>
                     <input class="skill-value inline-edit" data-value="data.skills.lore.value" name="lore" type="text"
                            value="{{data.skills.lore.value}}" data-dtype="Number">
                 </td>
-                <th>{{localize 'norse.skills.athletics'}}</th>
+                <td>{{localize 'norse.skills.athletics'}}</td>
                 <td>
                     <input class="skill-value inline-edit" data-value="data.skills.athletics.value" name="athletics"
                            type="text" value="{{data.skills.athletics.value}}" data-dtype="Number">
                 </td>
-                <th>{{localize 'norse.skills.speed'}}</th>
+                <td>{{localize 'norse.skills.speed'}}</td>
                 <td>
                     <input class="skill-value inline-edit" data-value="data.skills.speed.value" name="speed" type="text"
                            value="{{data.skills.speed.value}}" data-dtype="Number">
                 </td>
             </tr>
             <tr>
-                <th>{{localize 'norse.skills.perception'}}</th>
+                <td>{{localize 'norse.skills.perception'}}</td>
                 <td>
                     <input class="skill-value inline-edit" data-value="data.skills.perception.value" name="perception"
                            type="text" value="{{data.skills.perception.value}}" data-dtype="Number">
                 </td>
-                <th>{{localize 'norse.skills.healing'}}</th>
+                <td>{{localize 'norse.skills.healing'}}</td>
                 <td>
                     <input class="skill-value inline-edit" data-value="data.skills.healing.value" name="healing"
                            type="text" value="{{data.skills.healing.value}}" data-dtype="Number">
                 </td>
-                <th>{{localize 'norse.skills.persuasion'}}</th>
+                <td>{{localize 'norse.skills.persuasion'}}</td>
                 <td>
                     <input class="skill-value inline-edit" data-value="data.skills.persuasion.value" name="persuasion"
                            type="text" value="{{data.skills.persuasion.value}}" data-dtype="Number">
                 </td>
             </tr>
             <tr>
-                <th>{{localize 'norse.skills.investigation'}}</th>
+                <td>{{localize 'norse.skills.investigation'}}</td>
                 <td>
                     <input class="skill-value inline-edit" data-value="data.skills.investigation.value"
                            name="investigation" type="text" value="{{data.skills.investigation.value}}"
                            data-dtype="Number">
                 </td>
-                <th>{{localize 'norse.skills.intimidation'}}</th>
+                <td>{{localize 'norse.skills.intimidation'}}</td>
                 <td>
                     <input class="skill-value inline-edit" data-value="data.skills.intimidation.value"
                            name="intimidation" type="text" value="{{data.skills.intimidation.value}}"
                            data-dtype="Number">
                 </td>
-                <th>{{localize 'norse.skills.deception'}}</th>
+                <td>{{localize 'norse.skills.deception'}}</td>
                 <td>
                     <input class="skill-value inline-edit" data-value="data.skills.deception.value" name="deception"
                            type="text" value="{{data.skills.deception.value}}" data-dtype="Number">
                 </td>
             </tr>
             <tr>
-                <th>{{localize 'norse.skills.deduction'}}</th>
+                <td>{{localize 'norse.skills.deduction'}}</td>
                 <td>
                     <input class="skill-value inline-edit" data-value="data.skills.deduction.value" name="deduction"
                            type="text" value="{{data.skills.deduction.value}}" data-dtype="Number">
                 </td>
-                <th>{{localize 'norse.skills.performance'}}</th>
+                <td>{{localize 'norse.skills.performance'}}</td>
                 <td>
                     <input class="skill-value inline-edit" data-value="data.skills.performance.value" name="performance"
                            type="text" value="{{data.skills.performance.value}}" data-dtype="Number">
                 </td>
-                <th>{{localize 'norse.skills.stealth'}}</th>
+                <td>{{localize 'norse.skills.stealth'}}</td>
                 <td>
                     <input class="skill-value inline-edit" data-value="data.skills.stealth.value" name="stealth"
                            type="text" value="{{data.skills.stealth.value}}" data-dtype="Number">
@@ -139,6 +138,7 @@
             </tr>
         </table>
     </div>
+    </section>
     <section class="body">
         <h2>{{localize 'norse.actorSheet.body'}}</h2>
         <div>
@@ -166,24 +166,22 @@
                 </tr>
             </table>
         </div>
-    </section>
-    <section class="basics">
-        <div>
-            <h2>{{localize 'norse.actorSheet.basics'}}</h2>
-            <table>
-                <tr>
-                    <th>{{localize 'norse.actorBasics.age'}}</th>
-                    <td>{{data.characterAttributes.age}}</td>
-                </tr>
-                <tr>
-                    <th>{{localize 'norse.actorBasics.height'}}</th>
-                    <td>{{data.characterAttributes.height}}</td>
-                </tr>
-                <tr>
-                    <th>{{localize 'norse.actorBasics.weight'}}</th>
-                    <td>{{data.characterAttributes.weight}}</td>
-                </tr>
-            </table>
-        </div>
+        <h2>{{localize 'norse.actorSheet.organs'}}</h2>
+        <ol class="actor-organs">
+            {{#each inventory.organ as |item id|}}
+                {{log item}}
+                {{log id}}
+                <li class="actor-organ" data-item-id="{{id}}">
+                    <div class="organ-name flexrow">
+<!--                        <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>-->
+                        <h4>{{item.name}}</h4>
+                        <div>
+                            <a class="item-control item-edit" data-id="{{item._id}}" title="Edit Item"><i class="fas fa-edit"></i></a>
+                            <a class="item-control item-delete" data-id="{{item._id}}" title="Delete Item"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </div>
+                </li>
+            {{/each}}
+        </ol>
     </section>
 </form>

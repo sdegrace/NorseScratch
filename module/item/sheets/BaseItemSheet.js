@@ -1,6 +1,5 @@
-export default class NorseItemSheet extends ItemSheet {
+export default class BaseItemSheet extends ItemSheet {
     get template() {
-        console.log("norse | template");
         // return "systems/NorseScratch/templates/sheets/organ-sheet.hbs";
         return `systems/NorseScratch/templates/sheets/items/${this.item.data.type}-sheet.hbs`;
     }
@@ -12,4 +11,15 @@ export default class NorseItemSheet extends ItemSheet {
 
         return data;
     }
+
+    activateListeners(html)  {
+        super.activateListeners(html);
+        html.on('drop', (e) => this._onDrop(e.originalEvent));
+    }
+
+    _onDrop(event) {
+        console.error("You can't drop items onto this sheet.")
+    }
+
+
 }

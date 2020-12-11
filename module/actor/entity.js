@@ -1,4 +1,4 @@
-export default class NorseActor extends Actor {
+export default class ActorNorse extends Actor {
 
     prepareBaseData() {
         super.prepareBaseData();

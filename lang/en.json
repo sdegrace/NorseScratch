@@ -1,11 +1,12 @@
 {
   "norse": {
     "injuries": {
-      "name": "Name",
+      "friendlyName": "Friendly Name",
       "onsetAt": "Onset At",
       "maxAt": "Max At",
       "maxSeverity": "Max Severity",
-      "value": "Current Value",
+      "value": "Current Damage Level",
+      "severity": "Current Severity (Calculated from Damage Level)",
       "max": "Max Value (Always 1.0)",
       "lossOfLucidity": "Loss of Lucidity",
       "pain": "Pain",
@@ -25,7 +26,11 @@
       "favor": "Favor",
       "healthAttributes": "Health Attributes",
       "body": "Body",
-      "basics": "Basics"
+      "basics": "Basics",
+      "organs": "Organs"
+    },
+    "organSheet": {
+      "injuries": "Injury Symptoms"
     },
     "actorBasics": {
       "age": "Age",

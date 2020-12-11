@@ -125,25 +125,22 @@
       "injury"
     ],
     "object": {
-      "name": "String",
       "max": 0,
       "value": 0
     },
     "organ": {
-      "name": "exampleOrgan",
       "material": "fleshy",
       "bloodPercentage": 0.01,
       "tempDamageAmount": 0.0,
-      "permanentDamageAmount": 0.0
+      "permanentDamageAmount": 0.0,
+      "injuries": []
     },
     "injury": {
-      "name": "exampleInjury",
+      "friendlyName": "This Injury Isn't Friendly Yet.",
       "onsetAt": 0.05,
       "maxAt": 0.4,
-      "maxSeverity": 0.25,
       "value": 0.0,
-      "max": 1.0
-    }
+      "max": 0.5}
   }
 }
 

@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f14abfe3-2faf-40d4-8688-98744661eb52" name="Default Changelist" comment="" />
+    <list default="true" id="f14abfe3-2faf-40d4-8688-98744661eb52" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/module/CustomClasses/Organ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module/item/entity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module/item/sheets/InjurySheet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module/item/sheets/OrganSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/lang/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/CustomClasses/NorseActor.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/actor/entity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/sheets/NorseActorSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/actor/sheets/NorseActorSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/sheets/NorseItemSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/item/sheets/BaseItemSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/norse.js" beforeDir="false" afterPath="$PROJECT_DIR$/norse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template.json" beforeDir="false" afterPath="$PROJECT_DIR$/template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sheets/actor/character-sheet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sheets/actor/character-sheet.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sheets/items/injury-sheet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sheets/items/injury-sheet.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sheets/items/organ-sheet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sheets/items/organ-sheet.hbs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +29,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1lJ6oX4TSuaFYBSTUR6qm0bFvUu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,7 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/sheets/actor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/module/sheets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -34,13 +53,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Stephen\AppData\Local\FoundryVTT\Data\systems\NorseScratch\module\sheets" />
       <recent name="$PROJECT_DIR$/templates/sheets/actor" />
       <recent name="$PROJECT_DIR$/templates/sheets" />
       <recent name="$PROJECT_DIR$/module" />
       <recent name="$PROJECT_DIR$/templates" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Stephen\AppData\Local\FoundryVTT\Data\systems\NorseScratch\module\item" />
+      <recent name="C:\Users\Stephen\AppData\Local\FoundryVTT\Data\systems\NorseScratch\module\actor\sheets" />
+      <recent name="C:\Users\Stephen\AppData\Local\FoundryVTT\Data\systems\NorseScratch\module\actor" />
       <recent name="$PROJECT_DIR$/templates/sheets/items" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -54,19 +76,33 @@
       <option name="presentableId" value="Default" />
       <updated>1607303022417</updated>
       <workItem from="1607303023594" duration="37435000" />
+      <workItem from="1607539673227" duration="3269000" />
+      <workItem from="1607543152111" duration="25603000" />
+      <workItem from="1607697780846" duration="4389000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/module/sheets/NorseActorSheet.js</url>
-          <line>49</line>
-          <properties lambdaOrdinal="-1" />
+          <url>file://$PROJECT_DIR$/module/actor/sheets/NorseActorSheet.js</url>
+          <line>27</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
