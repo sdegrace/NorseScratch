@@ -21,6 +21,17 @@
       "tempDamageAmount": "Current Temporary Damage Level",
       "permanentDamageAmount": "Current Permanent Damage Level"
     },
+    "material": {
+      "compressiveUlt": "Ultimate Compressive Strength",
+      "compressiveYield": "Compressive Yield Strength",
+      "density": "Density",
+      "modulusOfElasticity": "Modulus of Elasticity",
+      "shearModulus": "Shear Modulus",
+      "strainAtFracture": "Strain at Fracture",
+      "tensileUlt": "Ultimate Tensile Strength",
+      "tensileYield": "Tensile Yield Strength",
+      "valuePerKG": "Value per Kilogram"
+    },
     "actorSheet": {
       "newItem": "New Item",
       "favor": "Favor",

@@ -1,7 +1,8 @@
 import {norse} from "./module/config.js";
-import BaseItemSheet from "./module/item/sheets/BaseItemSheet.js";
+import BaseItemSheetNorse from "./module/item/sheets/BaseItemSheetNorse.js";
 import OrganSheet from "./module/item/sheets/OrganSheet.js";
 import InjurySheet from "./module/item/sheets/InjurySheet.js";
+// import MaterialSheet from "./module/item/sheets/MaterialSheet.js";
 import NorseActorSheet from "./module/actor/sheets/NorseActorSheet.js"
 import ActorNorse from "./module/actor/entity.js";
 import ItemNorse from "./module/item/entity.js";
@@ -15,9 +16,9 @@ Hooks.once("init",
         CONFIG.norse = norse;
         CONFIG.Actor.entityClass = ActorNorse;
         CONFIG.Item.entityClass = ItemNorse;
-        Items.unregisterSheet("core", BaseItemSheet);
-        Items.registerSheet("NorseScratch", BaseItemSheet, {
-            types: ["object"],
+        Items.unregisterSheet("core", ItemSheet);
+        Items.registerSheet("NorseScratch", BaseItemSheetNorse, {
+            types: ["material"],
             makeDefault: true,
             label: "Norse.SheetClassObject"
         });
@@ -32,6 +33,12 @@ Hooks.once("init",
             label: "Norse.SheetClassInjury"
         });
 
+        // Items.registerSheet("NorseScratch", MaterialSheet, {
+        //     types: ["material"],
+        //     makeDefault: true,
+        //     label: "Norse.SheetClassMaterial"
+        // });
+
         Actors.unregisterSheet("core", NorseActorSheet);
         Actors.registerSheet("NorseScratch", NorseActorSheet);
 
@@ -39,5 +46,26 @@ Hooks.once("init",
         Handlebars.registerHelper("log", function(something) {
                     console.log(something);
             });
+        Handlebars.registerHelper("concat", function concat({ positional }) {
+            console.log(positional);
+            return positional
+                .value()
+                .map(normalizeTextValue)
+                .join('');
+        });
+    }
+);
+
+Hooks.once("ready",
+    function () {
+        console.log("Norse | Initialization done");
+        for (let key of game.items.keys()) {
+            let item = game.items.get(key)
+            item.prepareEmbeddedEntities();
+        }
+        for (let key of game.items.keys()) {
+            let item = game.items.get(key)
+            item.prepareData();
+        }
     }
 );

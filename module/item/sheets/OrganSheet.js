@@ -1,7 +1,7 @@
-import BaseItemSheet from "./BaseItemSheet.js";
+import BaseItemSheetNorse from "./BaseItemSheetNorse.js";
 
 
-export default class OrganSheet extends BaseItemSheet {
+export default class OrganSheet extends BaseItemSheetNorse {
 
     activateListeners(html) {
         super.activateListeners(html);

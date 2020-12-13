@@ -1,6 +1,6 @@
-import BaseItemSheet from "./BaseItemSheet.js";
+import BaseItemSheetNorse from "./BaseItemSheetNorse.js";
 
 
-export default class InjurySheet extends BaseItemSheet {
+export default class InjurySheet extends BaseItemSheetNorse {
 
 }

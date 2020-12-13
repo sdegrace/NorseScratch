@@ -1,0 +1,23 @@
+<form class="{{cssClass}}" autocomplete="off">
+    {{log this}}
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </header>
+    <section class="templateData">
+        <div>
+            <table>
+                {{#each data as |value key|}}
+                    {{log key}}
+                    {{log value}}
+                    <tr>
+                        <td>{{localize (concat 'norse.organs.' key)}}</td>
+                        <td>
+                            <input name={{concat "data." key}} type="text" value="{{concat "data." key}}">
+                        </td>
+                    </tr>
+                {{/each}}
+            </table>
+        </div>
+    </section>
+</form>

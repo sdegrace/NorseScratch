@@ -120,27 +120,99 @@
   },
   "Item": {
     "types": [
-      "object",
+      "wearable",
+      "wieldable",
+      "consumable",
+      "general",
       "organ",
-      "injury"
+      "injury",
+      "material",
+      "attackType"
     ],
-    "object": {
-      "max": 0,
-      "value": 0
+    "templates": {
+      "itemDescription": {
+        "description": {
+          "value": "",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": ""
+      },
+      "equipable": {
+        "equipped": false
+      },
+      "physicalItem": {
+        "baseMaterial": "",
+        "workmanshipQuality": "",
+        "workmanshipTime": 0,
+        "quantity": 1,
+        "weight": 0,
+        "price": 0,
+        "rarity": "",
+        "identified": true
+      }
+    },
+    "wearable": {
+      "templates": [
+        "physicalItem",
+        "equipable",
+        "itemDescription"
+      ]
+    },
+    "wieldable": {
+      "templates": [
+        "physicalItem",
+        "equipable",
+        "itemDescription"
+      ]
+    },
+    "consumable": {
+      "templates": [
+        "physicalItem",
+        "itemDescription"
+      ]
+    },
+    "general": {
+      "templates": [
+        "physicalItem",
+        "itemDescription"
+      ]
     },
     "organ": {
-      "material": "fleshy",
+      "templates": [
+        "physicalItem"
+      ],
       "bloodPercentage": 0.01,
       "tempDamageAmount": 0.0,
       "permanentDamageAmount": 0.0,
       "injuries": []
     },
     "injury": {
-      "friendlyName": "This Injury Isn't Friendly Yet.",
       "onsetAt": 0.05,
       "maxAt": 0.4,
       "value": 0.0,
-      "max": 0.5}
+      "max": 0.5
+    },
+    "material": {
+      "valuePerKG": 0,
+      "density": 0,
+      "tensileUlt": 0,
+      "tensileYield": 0,
+      "compressiveYield": 0,
+      "compressiveUlt": 0,
+      "modulusOfElasticity": 0,
+      "shearModulus": 0,
+      "strainAtFracture": 0
+    },
+    "attackType": {
+      "attackProperties": {
+        "swingEdgeSharpness": 0,
+        "swingPointSharpness": 0,
+        "swingEdgeLength": 0,
+        "swingPointSurfaceArea": 0
+      }
+    }
   }
+
 }
 
