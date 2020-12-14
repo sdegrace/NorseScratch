@@ -6,59 +6,18 @@
     <section class="templateData">
         <div>
             <table>
-                <!--            <tr>-->
-                <!--                <td>{{localize 'norse.organs.name'}}</td>-->
-                <!--                <td>-->
-                <!--                    <input name="data.name" type="text" value="{{data.name}}">-->
-                <!--                </td>-->
-                <!--            </tr>-->
-                <tr>
-                    <td>{{localize 'norse.organs.material'}}</td>
-                    <td>
-                        <input name="data.material" type="text" value="{{data.material}}">
-                    </td>
-                </tr>
-                <tr>
-                    <td>{{localize 'norse.organs.bloodPercentage'}}</td>
-                    <td>
-                        <input name="data.bloodPercentage" type="text" value="{{data.bloodPercentage}}"
-                               data-dtype="Number">
-                    </td>
-                </tr>
-                <tr>
-                    <td>{{localize 'norse.organs.tempDamageAmount'}}</td>
-                    <td>
-                        <input name="data.tempDamageAmount" type="text" value="{{data.tempDamageAmount}}"
-                               data-dtype="Number">
-                    </td>
-                </tr>
-                <tr>
-                    <td>{{localize 'norse.organs.permanentDamageAmount'}}</td>
-                    <td>
-                        <input name="data.permanentDamageAmount" type="text" value="{{data.permanentDamageAmount}}"
-                               data-dtype="Number">
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </section>
-    <section class="injuries">
-        <div>
-            <h2>{{localize 'norse.organSheet.injuries'}}</h2>
-            <ol class="organ-injuries">
-                {{#each injuries as |item id|}}
-                    <li class="actor-organ" data-item-id="{{id}}">
-                        <div class="organ-name flexrow">
-                            <!--                        <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>-->
-                            <h4>{{item.name}}</h4>
-                            <div>
-                                <a class="item-control item-edit" data-id="{{item.data._id}}" title="Edit Item"><i class="fas fa-edit"></i></a>
-                                <a class="item-control item-delete" data-id="{{item.data._id}}" title="Delete Item"><i class="fas fa-trash"></i></a>
-                            </div>
-                        </div>
-                    </li>
+                {{log data}}
+                {{#each data}}
+                    <tr>
+                        {{log @key}}
+                        {{log this}}
+                        <td>{{localize (concat 'norse.material.' @key)}}</td>
+                        <td>
+                            <input name={{@key}} type="text" value="{{this}}">
+                        </td>
+                    </tr>
                 {{/each}}
-            </ol>
+            </table>
         </div>
     </section>
 </form>

@@ -46,12 +46,13 @@ Hooks.once("init",
         Handlebars.registerHelper("log", function(something) {
                     console.log(something);
             });
-        Handlebars.registerHelper("concat", function concat({ positional }) {
-            console.log(positional);
-            return positional
-                .value()
-                .map(normalizeTextValue)
-                .join('');
+        Handlebars.registerHelper("concat", function(arg1, arg2) {
+            // console.log(positional);
+            return [arg1, arg2].join("");
+            // return positional
+            //     .value()
+            //     .map(normalizeTextValue)
+            //     .join('');
         });
     }
 );

@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f14abfe3-2faf-40d4-8688-98744661eb52" name="Default Changelist" comment="Commit for share">
-      <change afterPath="$PROJECT_DIR$/templates/sheets/items/attackType-sheet.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sheets/items/consumable-sheet.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sheets/items/general-sheet.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sheets/items/material-sheet.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sheets/items/wearable-sheet.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sheets/items/wieldable-sheet.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/lang/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/item/entity.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/item/entity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/item/sheets/BaseItemSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/item/sheets/BaseItemSheetNorse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/item/sheets/InjurySheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/item/sheets/InjurySheet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/item/sheets/OrganSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/item/sheets/OrganSheet.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/norse.js" beforeDir="false" afterPath="$PROJECT_DIR$/norse.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template.json" beforeDir="false" afterPath="$PROJECT_DIR$/template.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sheets/items/injury-sheet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sheets/items/injury-sheet.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sheets/items/weapon-sheet.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sheets/items/material-sheet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sheets/items/material-sheet.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +39,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -77,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607303022417</updated>
-      <workItem from="1607303023594" duration="37435000" />
+      <workItem from="1607303023594" duration="37495000" />
       <workItem from="1607539673227" duration="3269000" />
       <workItem from="1607543152111" duration="25603000" />
       <workItem from="1607697780846" duration="21454000" />

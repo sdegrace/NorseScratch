@@ -7,13 +7,14 @@
     <section class="templateData">
         <div>
             <table>
-                {{#each data as |value key|}}
-                    {{log key}}
-                    {{log value}}
+                {{log data}}
+                {{#each data}}
                     <tr>
-                        <td>{{localize (concat 'norse.organs.' key)}}</td>
+                        {{log @key}}
+                        {{log this}}
+                        <td>{{localize (concat 'norse.material.' @key)}}</td>
                         <td>
-                            <input name={{concat "data." key}} type="text" value="{{concat "data." key}}">
+                            <input name={{@key}} type="text" value="{{this}}">
                         </td>
                     </tr>
                 {{/each}}
