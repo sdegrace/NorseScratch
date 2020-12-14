@@ -18,7 +18,7 @@ Hooks.once("init",
         CONFIG.Item.entityClass = ItemNorse;
         Items.unregisterSheet("core", ItemSheet);
         Items.registerSheet("NorseScratch", BaseItemSheetNorse, {
-            types: ["material"],
+            types: ["material", "wearable", "consumable", "wieldable", "attackType", "general"],
             makeDefault: true,
             label: "Norse.SheetClassObject"
         });

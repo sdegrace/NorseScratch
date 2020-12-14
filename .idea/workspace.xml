@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f14abfe3-2faf-40d4-8688-98744661eb52" name="Default Changelist" comment="Commit for share">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f14abfe3-2faf-40d4-8688-98744661eb52" name="Default Changelist" comment="item sheets basics implemented">
       <change beforePath="$PROJECT_DIR$/norse.js" beforeDir="false" afterPath="$PROJECT_DIR$/norse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template.json" beforeDir="false" afterPath="$PROJECT_DIR$/template.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sheets/items/material-sheet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sheets/items/material-sheet.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607703438204</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="item sheets basics implemented">
+      <created>1607909490377</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607909490377</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,7 +102,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit for share" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit for share" />
+    <MESSAGE value="item sheets basics implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="item sheets basics implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
