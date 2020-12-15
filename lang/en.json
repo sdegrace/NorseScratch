@@ -1,5 +1,79 @@
 {
   "norse": {
+    "templates": {
+      "itemDescription": {
+        "description": "Description",
+        "source": "Source"
+      },
+      "equipable": {
+        "equipped": "Equipped"
+      },
+      "physicalItem": {
+        "baseMaterial": "Base Material",
+        "workmanshipQuality": "Workmanship Quality",
+        "workmanshipTime": "Time take to create",
+        "quantity": "Quantity",
+        "weight": "Weight",
+        "price": "Price",
+        "rarity": "Rarity",
+        "identified": "Identified",
+        "per": "per unit quantity"
+      }
+    },
+    "wearable": {
+      "baseMaterial": "Base Material",
+      "workmanshipQuality": "Workmanship Quality",
+      "workmanshipTime": "Time take to create",
+      "quantity": "Quantity",
+      "weight": "Weight",
+      "price": "Price",
+      "rarity": "Rarity",
+      "identified": "Identified",
+      "per": "per unit quantity",
+      "equipped": "Equipped",
+      "description": "Description",
+      "source": "Source"
+    },
+    "wieldable": {
+      "baseMaterial": "Base Material",
+      "workmanshipQuality": "Workmanship Quality",
+      "workmanshipTime": "Time take to create",
+      "quantity": "Quantity",
+      "weight": "Weight",
+      "price": "Price",
+      "rarity": "Rarity",
+      "identified": "Identified",
+      "per": "per unit quantity",
+      "equipped": "Equipped",
+      "description": "Description",
+      "source": "Source"
+    },
+    "consumable": {
+      "baseMaterial": "Base Material",
+      "workmanshipQuality": "Workmanship Quality",
+      "workmanshipTime": "Time take to create",
+      "quantity": "Quantity",
+      "weight": "Weight",
+      "price": "Price",
+      "rarity": "Rarity",
+      "identified": "Identified",
+      "per": "per unit quantity",
+      "description": "Description",
+      "source": "Source"
+    },
+    "general": {
+      "baseMaterial": "Base Material",
+      "workmanshipQuality": "Workmanship Quality",
+      "workmanshipTime": "Time take to create",
+      "quantity": "Quantity",
+      "weight": "Weight",
+      "price": "Price",
+      "rarity": "Rarity",
+      "identified": "Identified",
+      "per": "per unit quantity",
+      "description": "Description",
+      "source": "Source"
+    },
     "injuries": {
       "friendlyName": "Friendly Name",
       "onsetAt": "Onset At",
@@ -31,6 +105,13 @@
       "tensileUlt": "Ultimate Tensile Strength",
       "tensileYield": "Tensile Yield Strength",
       "valuePerKG": "Value per Kilogram"
+    },
+    "attackType": {
+      "attackProperties": "Attack Properties",
+        "EdgeSharpness": "Edge Sharpness",
+        "PointSharpness": "Point Sharpness",
+        "EdgeLength": "Edge Length",
+        "PointSurfaceArea": "Point surface area"
     },
     "actorSheet": {
       "newItem": "New Item",

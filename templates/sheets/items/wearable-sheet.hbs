@@ -1,4 +1,5 @@
 <form class="{{cssClass}}" autocomplete="off">
+    {{log this}}
     <header class="sheet-header">
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
@@ -11,7 +12,7 @@
                     <tr>
                         {{log @key}}
                         {{log this}}
-                        <td>{{localize (concat 'norse.material.' @key)}}</td>
+                        <td>{{localize (concat 'norse.wearable.' @key)}}</td>
                         <td>
                             <input name={{@key}} type="text" value="{{this}}">
                         </td>

@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f14abfe3-2faf-40d4-8688-98744661eb52" name="Default Changelist" comment="item sheets basics implemented">
-      <change beforePath="$PROJECT_DIR$/norse.js" beforeDir="false" afterPath="$PROJECT_DIR$/norse.js" afterDir="false" />
+    <list default="true" id="f14abfe3-2faf-40d4-8688-98744661eb52" name="Default Changelist" comment="Commit for share">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/lang/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template.json" beforeDir="false" afterPath="$PROJECT_DIR$/template.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sheets/items/attackType-sheet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sheets/items/attackType-sheet.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sheets/items/consumable-sheet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sheets/items/consumable-sheet.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sheets/items/general-sheet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sheets/items/general-sheet.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sheets/items/wearable-sheet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sheets/items/wearable-sheet.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sheets/items/wieldable-sheet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sheets/items/wieldable-sheet.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

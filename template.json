@@ -131,11 +131,7 @@
     ],
     "templates": {
       "itemDescription": {
-        "description": {
-          "value": "",
-          "chat": "",
-          "unidentified": ""
-        },
+        "description": "",
         "source": ""
       },
       "equipable": {
@@ -205,14 +201,11 @@
       "strainAtFracture": 0
     },
     "attackType": {
-      "attackProperties": {
-        "swingEdgeSharpness": 0,
-        "swingPointSharpness": 0,
-        "swingEdgeLength": 0,
-        "swingPointSurfaceArea": 0
-      }
+      "swingEdgeSharpness": 0,
+      "swingPointSharpness": 0,
+      "swingEdgeLength": 0,
+      "swingPointSurfaceArea": 0
     }
   }
-
 }
 
