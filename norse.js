@@ -2,6 +2,7 @@ import {norse} from "./module/config.js";
 import BaseItemSheetNorse from "./module/item/sheets/BaseItemSheetNorse.js";
 import OrganSheet from "./module/item/sheets/OrganSheet.js";
 import InjurySheet from "./module/item/sheets/InjurySheet.js";
+import WieldableSheet from "./module/item/sheets/WieldableSheet.js";
 // import MaterialSheet from "./module/item/sheets/MaterialSheet.js";
 import NorseActorSheet from "./module/actor/sheets/NorseActorSheet.js"
 import ActorNorse from "./module/actor/entity.js";
@@ -18,9 +19,14 @@ Hooks.once("init",
         CONFIG.Item.entityClass = ItemNorse;
         Items.unregisterSheet("core", ItemSheet);
         Items.registerSheet("NorseScratch", BaseItemSheetNorse, {
-            types: ["material", "wearable", "consumable", "wieldable", "attackType", "general"],
+            types: ["material", "wearable", "consumable", "attackType", "general"],
             makeDefault: true,
             label: "Norse.SheetClassObject"
+        });
+        Items.registerSheet("NorseScratch", WieldableSheet, {
+            type: ["wieldable"],
+            makeDefault: true,
+            label: "Norse.SheetClassWieldable"
         });
         Items.registerSheet("NorseScratch", OrganSheet, {
             types: ["organ"],

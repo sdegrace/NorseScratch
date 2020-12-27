@@ -139,18 +139,21 @@
       },
       "physicalItem": {
         "baseMaterial": "",
-        "workmanshipQuality": "",
-        "workmanshipTime": 0,
         "quantity": 1,
         "weight": 0,
         "price": 0,
         "rarity": "",
         "identified": true
+      },
+      "craftedItem": {
+        "workmanshipQuality": "",
+        "workmanshipTime": 0
       }
     },
     "wearable": {
       "templates": [
         "physicalItem",
+        "craftedItem",
         "equipable",
         "itemDescription"
       ]
@@ -158,9 +161,11 @@
     "wieldable": {
       "templates": [
         "physicalItem",
+        "craftedItem",
         "equipable",
         "itemDescription"
-      ]
+      ],
+      "functions": []
     },
     "consumable": {
       "templates": [
@@ -201,10 +206,9 @@
       "strainAtFracture": 0
     },
     "attackType": {
-      "swingEdgeSharpness": 0,
-      "swingPointSharpness": 0,
-      "swingEdgeLength": 0,
-      "swingPointSurfaceArea": 0
+      "sharpness": 0,
+      "size": 0,
+      "isCut": false
     }
   }
 }

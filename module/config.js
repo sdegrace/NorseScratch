@@ -1,7 +1,7 @@
 export const norse = {};
 
 norse.energy = {
-    "punch": 0.22
+    "punch": 0.22 // calories
 };
 // norse.injuries = {
 //     "loss_of_lucidity": {

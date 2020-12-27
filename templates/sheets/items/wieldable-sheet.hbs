@@ -3,21 +3,100 @@
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
     </header>
-    <section class="templateData">
-        <div>
-            <table>
-                {{log data}}
-                {{#each data}}
-                    <tr>
-                        {{log @key}}
-                        {{log this}}
-                        <td>{{localize (concat 'norse.wieldable.' @key)}}</td>
-                        <td>
-                            <input name={{@key}} type="text" value="{{this}}">
-                        </td>
-                    </tr>
-                {{/each}}
-            </table>
-        </div>
+    <section class="physicalItemData">
+        <h2>Physical Object Properties</h2>
+        <table>
+            <tr class="material-droppable">
+                <td class="material-droppable">{{localize 'norse.wieldable.baseMaterial'}}</td>
+                <td class="material-droppable">
+                    {{#if data.baseMaterial}}
+                        <div class="object-baseMaterial material-droppable flexrow">
+                            <h4 class="material-droppable">{{data.baseMaterial.name}}</h4>
+                            <div class="material-droppable">
+                                <a class="item-control item-edit material-droppable" data-id="{{data.baseMaterial.data._id}}" title="Edit Item"><i class="fas fa-edit"></i></a>
+                                <a class="item-control item-delete material-droppable" data-id="{{data.baseMaterial.data._id}}" title="Delete Item"><i class="fas fa-trash"></i></a>
+                            </div>
+                        </div>
+                    {{else}}
+                        <h4 class="material-droppable">Drop material Here</h4>
+                    {{/if}}
+                </td>
+            </tr>
+            <tr>
+                <td>{{localize 'norse.wieldable.quantity'}}</td>
+                <td>
+                    <input name="data.quantity" type="text" value="{{data.quantity}}" data-dtype="Number">
+                </td>
+            </tr>
+            <tr>
+                <td>{{localize 'norse.wieldable.weight'}}</td>
+                <td>
+                    <input name="data.weight" type="text" value="{{data.weight}}" data-dtype="Number">
+                </td>
+            </tr>
+            <tr>
+                <td>{{localize 'norse.wieldable.price'}}</td>
+                <td>
+                    <input name="data.price" type="text" value="{{data.price}}" data-dtype="Number">
+                </td>
+            </tr>
+            <tr>
+                <td>{{localize 'norse.wieldable.rarity'}}</td>
+                <td>
+                    <input name="data.rarity" type="text" value="{{data.rarity}}" data-dtype="Number">
+                </td>
+            </tr>
+            <tr>
+                <td>{{localize 'norse.wieldable.identified'}}</td>
+                <td>
+                    <input name="data.identified" type="text" value="{{data.identified}}" data-dtype="Boolean">
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section class="craftedItemData">
+        <h2>Crafted Item Data</h2>
+        <table>
+            <tr>
+                <td>{{localize 'norse.wieldable.workmanshipQuality'}}</td>
+                <td>
+                    <input name="data.workmanshipQuality" type="text" value="{{data.workmanshipQuality}}" data-dtype="Number">
+                </td>
+            </tr>
+            <tr>
+                <td>{{localize 'norse.wieldable.workmanshipTime'}}</td>
+                <td>
+                    <input name="data.workmanshipTime" type="text" value="{{data.workmanshipTime}}" data-dtype="Number">
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section class="equipableItemData">
+        <h2>Equipped</h2>
+        <table>
+            <tr>
+                <td>{{localize 'norse.wieldable.equipped'}}</td>
+                <td>
+                    <input name="data.equipped" type="text" value="{{data.equipped}}" data-dtype="Boolean">
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section class="itemDescription">
+        <h2>Item Description</h2>
+        <table>
+            <tr>
+                <td>{{localize 'norse.wieldable.description'}}</td>
+                <td>
+                    <input name="data.description" type="text" value="{{data.description}}">
+                </td>
+            </tr>
+            <tr>
+                <td>{{localize 'norse.wieldable.source'}}</td>
+                <td>
+                    <input name="data.source" type="text" value="{{data.source}}">
+                </td>
+            </tr>
+        </table>
     </section>
 </form>

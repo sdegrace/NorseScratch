@@ -107,11 +107,9 @@
       "valuePerKG": "Value per Kilogram"
     },
     "attackType": {
-      "attackProperties": "Attack Properties",
-        "EdgeSharpness": "Edge Sharpness",
-        "PointSharpness": "Point Sharpness",
-        "EdgeLength": "Edge Length",
-        "PointSurfaceArea": "Point surface area"
+      "sharpness": "Sharpness",
+      "size": "Size",
+      "isPierce": "Piercing?"
     },
     "actorSheet": {
       "newItem": "New Item",
