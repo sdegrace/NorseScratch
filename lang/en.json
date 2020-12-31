@@ -51,7 +51,7 @@
     "consumable": {
       "baseMaterial": "Base Material",
       "workmanshipQuality": "Workmanship Quality",
-      "workmanshipTime": "Time take to create",
+      "workmanshipTime": "Time taken to create",
       "quantity": "Quantity",
       "weight": "Weight",
       "price": "Price",

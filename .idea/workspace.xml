@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f14abfe3-2faf-40d4-8688-98744661eb52" name="Default Changelist" comment="item sheets quick fix">
-      <change afterPath="$PROJECT_DIR$/module/item/sheets/WieldableSheet.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lang/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/lang/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/norse.js" beforeDir="false" afterPath="$PROJECT_DIR$/norse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes" beforeDir="false" afterPath="$PROJECT_DIR$/notes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template.json" beforeDir="false" afterPath="$PROJECT_DIR$/template.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sheets/items/attackType-sheet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sheets/items/attackType-sheet.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sheets/items/organ-sheet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sheets/items/organ-sheet.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/item/entity.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/item/entity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/item/sheets/WieldableSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/item/sheets/WieldableSheet.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/sheets/items/wieldable-sheet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sheets/items/wieldable-sheet.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +41,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">

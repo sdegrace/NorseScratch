@@ -39,6 +39,18 @@ export default class ItemNorse extends Item {
         }
     }
 
+    removeOwnedItem(id) {
+        if (this.data.data.baseMaterial === id) {
+            this.update({["data.baseMaterial"]: [""]});
+        } else if (this.data.data.functions.includes(id)) {
+            this.update({["data.functions"]: this.data.data.functions.filter(
+                    function (el, i) {
+                        return el != id;
+                    }
+                )});
+        }
+    }
+
     _prepareInjuryData(itemData, data) {
         if ("parent" in data) {
             let owner = game.items?.get(data.parent).data.data;

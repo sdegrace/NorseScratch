@@ -26,6 +26,9 @@ export default class WieldableSheet extends BaseItemSheetNorse {
         if (dropped_item.type == "material" && droppedOn.classList.contains("material-droppable")) {
             return item.update({["data.baseMaterial"]: dropped_id});
         }
+        else if (dropped_item.type == "attackType" && droppedOn.classList.contains("attackType-droppable")) {
+            return item.update({["data.functions"]: [...item.data.data.functions, dropped_id]})
+        }
     }
 
     _onItemEdit(event) {
@@ -39,13 +42,14 @@ export default class WieldableSheet extends BaseItemSheetNorse {
         event.preventDefault();
         const wieldable = this.item;
         const li = event.currentTarget;
-        let target = game.items.get(li.dataset.id);
-        delete target.data.data.parent;
-        switch (target.data.type) {
-            case "material":
-                return wieldable.update({["data.baseMaterial"]: ""});
-                break;
-        }
+        // let target = game.items.get(li.dataset.id);
+        wieldable.removeOwnedItem(li.dataset.id);
+        // delete target.data.data.parent;
+        // switch (target.data.type) {
+        //     case "material":
+        //         return wieldable.update({["data.baseMaterial"]: ""});
+        //         break;
+        // }
 
     }
 
